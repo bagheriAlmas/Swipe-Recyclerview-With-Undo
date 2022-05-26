@@ -14,6 +14,6 @@ Dependency = `implementation 'com.github.xabaras:RecyclerViewSwipeDecorator:1.4'
 ScreenShot 
 
 
-![alt-text](http://i.imgur.com/OUkLi.gif](https://im4.ezgif.com/tmp/ezgif-4-1761aeab65.gif)
+![](output.gif)
 
 
