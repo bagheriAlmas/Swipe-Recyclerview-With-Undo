@@ -26,12 +26,7 @@ abstract class SwipeGesture (context:Context): ItemTouchHelper.SimpleCallback(0,
 
     override fun onChildDraw(c: Canvas,recyclerView: RecyclerView,viewHolder: RecyclerView.ViewHolder,dX: Float,dY: Float,actionState: Int,isCurrentlyActive: Boolean) {
 
-        RecyclerViewSwipeDecorator.Builder(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
-            .addSwipeLeftBackgroundColor(deleteColor).addSwipeLeftActionIcon(deleteIcon).addSwipeLeftLabel("Remove").setSwipeLeftLabelColor(Color.DKGRAY)
-            .addSwipeRightBackgroundColor(archiveColor).addSwipeRightActionIcon(archiveIcon).addSwipeRightLabel("Archive").setSwipeRightLabelColor(Color.DKGRAY)
-            .create()
-            .decorate()
-
+        RecyclerViewSwipeDecorator.Builder(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive).addSwipeLeftBackgroundColor(deleteColor).addSwipeLeftActionIcon(deleteIcon).addSwipeLeftLabel("Remove").setSwipeLeftLabelColor(Color.DKGRAY).addSwipeRightBackgroundColor(archiveColor).addSwipeRightActionIcon(archiveIcon).addSwipeRightLabel("Archive").setSwipeRightLabelColor(Color.DKGRAY).create().decorate()
 
         super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
     }

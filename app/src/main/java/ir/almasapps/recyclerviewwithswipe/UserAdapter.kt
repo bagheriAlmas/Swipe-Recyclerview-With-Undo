@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import ir.almasapps.recyclerviewwithswipe.Model.User
 
 class UserAdapter(var context:Context ,var list : ArrayList<User>): RecyclerView.Adapter<UserAdapter.Holder>() {
 
